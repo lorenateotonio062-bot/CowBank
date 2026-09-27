@@ -1,0 +1,46 @@
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.1.3/ext/bigdecimal
+/opt/local/bin/ruby3.3 extconf.rb
+checking for __builtin_clz()... yes
+checking for __builtin_clzl()... yes
+checking for __builtin_clzll()... yes
+checking for float.h... yes
+checking for math.h... yes
+checking for stdbool.h... yes
+checking for stdlib.h... yes
+checking for x86intrin.h... yes
+checking for _lzcnt_u32() in x86intrin.h... yes
+checking for _lzcnt_u64() in x86intrin.h... yes
+checking for intrin.h... no
+checking for ruby/atomic.h... yes
+checking for ruby/internal/has/builtin.h... yes
+checking for ruby/internal/static_assert.h... yes
+checking for rb_complex_real() in ruby.h... yes
+checking for rb_complex_imag() in ruby.h... yes
+checking for rb_opts_exception_p() in ruby.h... yes
+checking for rb_category_warn() in ruby.h... yes
+checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
+checking for RUBY_TYPED_EMBEDDABLE in ruby.h... yes
+creating Makefile
+
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.1.3/ext/bigdecimal
+make DESTDIR\= sitearchdir\=./.gem.20260927-34854-pc05mj sitelibdir\=./.gem.20260927-34854-pc05mj clean
+rm -f 
+rm -fr bigdecimal.bundle bigdecimal.bundle.dSYM bigdecimal.o missing.o *.bak mkmf.log .*.time
+
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.1.3/ext/bigdecimal
+make DESTDIR\= sitearchdir\=./.gem.20260927-34854-pc05mj sitelibdir\=./.gem.20260927-34854-pc05mj
+/usr/bin/clang -I. -I/opt/local/include/ruby-3.3.12/x86_64-darwin24 -I/opt/local/include/ruby-3.3.12/ruby/backward -I/opt/local/include/ruby-3.3.12 -I. -DHAVE_BUILTIN___BUILTIN_CLZ -DHAVE_BUILTIN___BUILTIN_CLZL -DHAVE_BUILTIN___BUILTIN_CLZLL -DHAVE_FLOAT_H -DHAVE_MATH_H -DHAVE_STDBOOL_H -DHAVE_STDLIB_H -DHAVE_X86INTRIN_H -DHAVE__LZCNT_U32 -DHAVE__LZCNT_U64 -DHAVE_RUBY_ATOMIC_H -DHAVE_RUBY_INTERNAL_HAS_BUILTIN_H -DHAVE_RUBY_INTERNAL_STATIC_ASSERT_H -DHAVE_RB_COMPLEX_REAL -DHAVE_RB_COMPLEX_IMAG -DHAVE_RB_OPTS_EXCEPTION_P -DHAVE_RB_CATEGORY_WARN -DHAVE_CONST_RB_WARN_CATEGORY_DEPRECATED -DHAVE_CONST_RUBY_TYPED_EMBEDDABLE -I/opt/local/include -I/opt/local/libexec/openssl3/include -isystem/opt/local/include -isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fno-common -pipe -I/opt/local/libexec/openssl3/include -Os -isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -arch x86_64 -o bigdecimal.o -c bigdecimal.c
+/usr/bin/clang -I. -I/opt/local/include/ruby-3.3.12/x86_64-darwin24 -I/opt/local/include/ruby-3.3.12/ruby/backward -I/opt/local/include/ruby-3.3.12 -I. -DHAVE_BUILTIN___BUILTIN_CLZ -DHAVE_BUILTIN___BUILTIN_CLZL -DHAVE_BUILTIN___BUILTIN_CLZLL -DHAVE_FLOAT_H -DHAVE_MATH_H -DHAVE_STDBOOL_H -DHAVE_STDLIB_H -DHAVE_X86INTRIN_H -DHAVE__LZCNT_U32 -DHAVE__LZCNT_U64 -DHAVE_RUBY_ATOMIC_H -DHAVE_RUBY_INTERNAL_HAS_BUILTIN_H -DHAVE_RUBY_INTERNAL_STATIC_ASSERT_H -DHAVE_RB_COMPLEX_REAL -DHAVE_RB_COMPLEX_IMAG -DHAVE_RB_OPTS_EXCEPTION_P -DHAVE_RB_CATEGORY_WARN -DHAVE_CONST_RB_WARN_CATEGORY_DEPRECATED -DHAVE_CONST_RUBY_TYPED_EMBEDDABLE -I/opt/local/include -I/opt/local/libexec/openssl3/include -isystem/opt/local/include -isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fno-common -pipe -I/opt/local/libexec/openssl3/include -Os -isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -arch x86_64 -o missing.o -c missing.c
+rm -f bigdecimal.bundle
+/usr/bin/clang -dynamic -bundle -o bigdecimal.bundle bigdecimal.o missing.o -L. -L/opt/local/lib -L/opt/local/lib -L. -L/opt/local/libexec/openssl3/lib -L/opt/local/lib -Wl,-headerpad_max_install_names -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -fstack-protector-strong -L/opt/local/lib -L/opt/local/libexec/openssl3/lib -L/opt/local/lib -Wl,-headerpad_max_install_names -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -arch x86_64 -L/opt/local/lib -Wl,-undefined,dynamic_lookup  -arch x86_64  -lruby.3.3  -lpthread  
+
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.1.3/ext/bigdecimal
+make DESTDIR\= sitearchdir\=./.gem.20260927-34854-pc05mj sitelibdir\=./.gem.20260927-34854-pc05mj install
+mkdir -p . ./.gem.20260927-34854-pc05mj
+exit > .sitearchdir.time
+/opt/local/libexec/macports/clonebin/install -m 0755 bigdecimal.bundle ./.gem.20260927-34854-pc05mj
+
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/bigdecimal-4.1.3/ext/bigdecimal
+make DESTDIR\= sitearchdir\=./.gem.20260927-34854-pc05mj sitelibdir\=./.gem.20260927-34854-pc05mj clean
+rm -f 
+rm -fr bigdecimal.bundle bigdecimal.bundle.dSYM bigdecimal.o missing.o *.bak mkmf.log .*.time

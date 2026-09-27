@@ -1,0 +1,38 @@
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/json-3.0.2/ext/json/ext/parser
+/opt/local/bin/ruby3.3 extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... yes
+checking for rb_str_to_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... yes
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for ruby_xfree_sized() in ruby.h... no
+checking for x86intrin.h... yes
+checking for _lzcnt_u64() in x86intrin.h... yes
+checking for intrin.h... no
+checking for RUBY_TYPED_EMBEDDABLE in ruby.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for whether -mno-outline is accepted as CFLAGS... yes
+checking for x86intrin.h... yes
+checking for cpuid.h... yes
+creating Makefile
+
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/json-3.0.2/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260927-34854-ysz212 sitelibdir\=./.gem.20260927-34854-ysz212 clean
+rm -f 
+rm -fr parser.bundle parser.bundle.dSYM parser.o *.bak mkmf.log .*.time
+
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/json-3.0.2/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260927-34854-ysz212 sitelibdir\=./.gem.20260927-34854-ysz212
+/usr/bin/clang -I. -I/opt/local/include/ruby-3.3.12/x86_64-darwin24 -I/opt/local/include/ruby-3.3.12/ruby/backward -I/opt/local/include/ruby-3.3.12 -I. -DHAVE_RB_ENC_INTERNED_STR -DHAVE_RB_STR_TO_INTERNED_STR -DHAVE_RB_HASH_NEW_CAPA -DHAVE_RB_HASH_BULK_INSERT -DHAVE_X86INTRIN_H -DHAVE__LZCNT_U64 -DHAVE_CONST_RUBY_TYPED_EMBEDDABLE -DHAVE_X86INTRIN_H -DJSON_ENABLE_SIMD -DHAVE_CPUID_H -I/opt/local/include -I/opt/local/libexec/openssl3/include -isystem/opt/local/include -isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fno-common -pipe -I/opt/local/libexec/openssl3/include -Os -isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -std=c99 -mno-outline -arch x86_64 -o parser.o -c parser.c
+rm -f parser.bundle
+/usr/bin/clang -dynamic -bundle -o parser.bundle parser.o -L. -L/opt/local/lib -L/opt/local/lib -L. -L/opt/local/libexec/openssl3/lib -L/opt/local/lib -Wl,-headerpad_max_install_names -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -fstack-protector-strong -L/opt/local/lib -L/opt/local/libexec/openssl3/lib -L/opt/local/lib -Wl,-headerpad_max_install_names -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk -arch x86_64 -L/opt/local/lib -Wl,-undefined,dynamic_lookup  -arch x86_64  -lruby.3.3  -lpthread  
+
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/json-3.0.2/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260927-34854-ysz212 sitelibdir\=./.gem.20260927-34854-ysz212 install
+mkdir -p . ./.gem.20260927-34854-ysz212/json/ext
+exit > .sitearchdir.-.json.-.ext.time
+/opt/local/libexec/macports/clonebin/install -m 0755 parser.bundle ./.gem.20260927-34854-ysz212/json/ext
+
+current directory: /Users/mac/Documents/Lorena/cowbank/vendor/bundle/ruby/3.3.0/gems/json-3.0.2/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260927-34854-ysz212 sitelibdir\=./.gem.20260927-34854-ysz212 clean
+rm -f 
+rm -fr parser.bundle parser.bundle.dSYM parser.o *.bak mkmf.log .*.time

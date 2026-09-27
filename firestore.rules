@@ -1,0 +1,23 @@
+rules_version = '2';
+
+// Regras de segurança do CowBank.
+// Cada pessoa logada só lê e escreve nos PRÓPRIOS dados (usuarios/{uid}/...).
+// Sem login, ou tentando acessar dados de outro usuário: acesso negado.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /usuarios/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+      // grupos, bovinos e qualquer subcoleção futura
+      match /{subcolecao=**} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+
+    // Todo o resto fica bloqueado.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
